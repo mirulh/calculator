@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.calc {
+  width: 400px;
+  /* border: 3px solid red; */
+  background-color: black;
+  color: white;
+}
+
+.calc-buttons {
+}
+
+.calc-button-row {
+  display: flex;
+
+  /* flex flow is the shorthand for property flex-direction and flex-wrap */
+
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+.screen {
+  color: white;
+  text-align: right;
+  font-family: "Courier Prime", monospace;
+  padding: 20px 5px;
+  font-size: 40px;
+}
+
+.calculation-screen {
+  padding: 5px;
+  text-align: right;
+  font-family: "Courier Prime", monospace;
+  height: 5px;
+}
+
+.calc-button {
+  color: black;
+  background-color: #d8d9db;
+  border: none;
+  font-size: 40px;
+  height: 100px;
+
+  /* ".5" for the small gap between the buttons, flex gap will fill the space evenly */
+
+  /* alternatively, using width: 24.5% pose the same result */
+  flex-basis: 24.5%;
+  /* change the cursor when interacting with the button */
+  cursor: pointer;
+}
+
+.double {
+  flex-basis: 49.7%;
+}
+
+.triple {
+  flex-basis: 74.8%;
+}
+
+.calc-button:last-child {
+  background-color: #df974c;
+  color: white;
+}
+
+.calc-button:hover {
+  background-color: #ebebeb;
+}
+
+/* is the moment when you click something the color changes */
+.calc-button:active {
+  background-color: #bbbcbe;
+}
+
+.calc-button:last-child:hover {
+  background-color: #dfb07e;
+}
+
+.calc-button:last-child:active {
+  background-color: #dd8d37;
+}
